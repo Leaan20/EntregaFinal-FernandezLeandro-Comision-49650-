@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- LINK TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- LINK SWEETALERT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Entrega final | Coderhouse</title>
+</head>
+<body>
+    <header>
+        <!-- La barra de navegacion  -->
+        <div class="container-fluid">
+            <nav class="navbar ">
+                <ul class="list">
+                    <li><a href="#"><h3 class="logo">DuckWave</h3></a></li>
+                    <li class="item-list"><a href="#">Inicio</a></li>
+                    <li class="item-list"><a href="#">Sobre nosotros</a></li>
+                    <li class="item-list"><a href="#">Shop</a></li>
+                </ul>
+                <!-- aqui se incluyen la barra de busqueda y los checkbox para filtrar las caracteristicas -->
+                <form class="formu">
+                    <label for="busqueda">Buscar Producto</label>
+                    <input class="input" type="text" id="busqueda" placeholder="Búsqueda" name="busqueda">
+                
+                    <label for="nombre">Nombre</label>
+                    <input class="check" type="radio" id="nombre" value="nombre" name="option">
+                
+                    <label for="marca">Marca</label>
+                    <input class="check" type="radio" id="marca" value="marca" name="option">
+                
+                    <label for="precio">Precio</label>
+                    <input class="check" type="radio" id="precio" value="precio" name="option">
+                
+                    <label for="grosor">Grosor</label>
+                    <input class="check" type="radio" id="grosor" value="grosor" name="option">
+                
+                    <button class="btn btn-primary" id="btnSearch" type="button">Buscar</button>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                </form>
+                
+                
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Titulo de la pagina, junto con la informacion necesaria para la busqueda -->
+        <div class="contenedor-principal">
+            <div class="principal">
+                <h1 class="title">DuckWave</h1>
+                <h2 class="subtitle">Trajes de neoprene</h2>
+                <p class="parag">Tenemos los mejores trajes de neoprene para este invierno.<br>
+                La mejor tecnologia disponible, para no perder ni un minuto en tus sesiones de surf.
+                </p>
+            </div>
+        </div>
+
+        <!-- Informacion dirigida al usuario para que pueda hacer las busqueda y aplicar los filtros -->
+        <div class="contenedor-information">
+            <div class="information">
+                <p> <strong>Marcas:</strong> Billabong, Hurley, Rip curl, Quiksilver, Vissla</p>
+                <p> <strong>Grosor:</strong> 4/3</p>
+                <p><strong>Costo de envio:</strong> $8.000 , si el total supera los $300.000 ! el envio es gratis !</p>
+            </div>
+        </div>
+
+        <div class="contenedores">
+
+            <!-- contenedor de la tarjeta -->
+            <div id="cardContainer">
+                <!-- aqui es donde se va a ver el loader -->
+                <div class="load-container">
+                    <div class="loader none">
+                    </div>
+                </div>
+
+            </div>
+    
+        
+        </div>
+
+        <!-- Contenedor del carrito de compras -->
+        <div id="carritoContainer">
+
+            
+        </div>
+        
+    <!--Boton para que abra el carrito y se cierre -->
+    <div id="cart-toggle-btn"><i class="fas fa-shopping-cart"></i></div>
+
+    <!-- Botones para finalizar compra y vaciar carrito -->
+    <div class="buttonContainer">
+        <button class="btn btn-info" id="btnFinalizarCompra">Finalizar compra</button>
+        <button class="btn btn-warning" id="btnVaciar">Vaciar Carrito</button>
+    </div>
+    
+
+
+
+
+    </main>
+    <!-- Footer que contendra las redes sociales -->
+    <footer id="footer">
+        <div class="redes-foot">
+           <ul>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fas fa-times"></i> X</a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+           </ul>
+        </div>
+    </footer>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- SCRIPT TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- SCRIPT SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
+    <!-- SCRIPT JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
